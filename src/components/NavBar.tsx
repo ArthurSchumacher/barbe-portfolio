@@ -11,9 +11,9 @@ function NavBar() {
     { label: "Contact", path: paths.about() },
   ];
 
-  const renderedLinks = links.map((link) => {
+  const renderedLinks = links.map((link, index) => {
     return (
-      <li className="group relative">
+      <li className="group relative" key={index}>
         <Link href={link.path} className="relative">
           <span>{link.label}</span>
           <span className="absolute bottom-0 left-0 w-full h-0.5 bg-white origin-left transform transition-transform duration-300 scale-x-0 group-hover:scale-x-100"></span>
