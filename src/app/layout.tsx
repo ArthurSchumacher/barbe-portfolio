@@ -3,6 +3,7 @@ import "./globals.css";
 import { Poppins as FontSans } from "next/font/google";
 import { cn } from "@/lib/utils";
 import NavBar from "@/components/NavBar";
+import Hero from "@/components/Hero";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -30,6 +31,7 @@ export default function RootLayout({
         )}
       >
         <NavBar />
+        <Hero />
         {children}
       </body>
     </html>

@@ -81,3 +81,49 @@
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
 }
+
+.header3 {
+  width: 100%;
+  height: 60px;
+  background: #4776e6;
+  box-shadow: 0 0 10px 1px;
+  margin-bottom: 40px;
+}
+
+.menu3 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0 100px;
+}
+
+.menu3 li {
+  display: block;
+  height: 100%;
+  margin-right: 30px;
+  font-size: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 0 0 15px #8e54e9;
+  transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.menu3 li:after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  display: block;
+  transition: all 0.3s ease;
+  bottom: 25%;
+}
+.menu3 li:hover::after {
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+}

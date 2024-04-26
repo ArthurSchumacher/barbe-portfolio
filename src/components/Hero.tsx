@@ -5,10 +5,10 @@ function Hero() {
     <>
       <Image
         width={1920}
-        height={793}
+        height={790}
         src={"/hero.png"}
         alt="Hero Image Background"
-        className="object-contain"
+        className="object-contain sm:object-cover w-full h-full sm:h-[50vh] mt-20 sm:mt-0 rounded-b-xl"
       />
     </>
   );
