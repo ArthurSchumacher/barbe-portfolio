@@ -4,7 +4,7 @@ import Title from "./Title";
 function About() {
   return (
     <>
-      <Title label="About" />
+      <Title label="About" id={"about"} />
     </>
   );
 }

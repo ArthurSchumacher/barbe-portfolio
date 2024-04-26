@@ -1,7 +1,8 @@
 "use client";
 import { paths } from "@/paths";
 import Link from "next/link";
-import { GoListUnordered } from "react-icons/go";
+
+import MobileNav from "./MobileNav";
 
 function NavBar() {
   const links = [
@@ -23,19 +24,19 @@ function NavBar() {
   });
 
   return (
-    <div className="bg-primarylighter text-neutral-50 navbar fixed top-0 z-10 w-full">
-      <div className="container flex items-center justify-between py-6">
+    <div className="bg-primarylight/80 text-neutral-50 navbar fixed top-0 z-10 w-full">
+      <div className="container flex items-center justify-between py-5">
         <div>
-          <h1 className="uppercase text-xl font-medium">Gabriel Barberiz</h1>
+          <Link href={"/"} className="uppercase text-xl font-medium">
+            Gabriel Barberiz
+          </Link>
         </div>
 
-        <ul className="hidden sm:flex items-center gap-x-12">
+        <ul className="hidden md:flex md:items-center gap-x-12">
           {renderedLinks}
         </ul>
 
-        <div className="sm:hidden flex">
-          <GoListUnordered size={28} />
-        </div>
+        <MobileNav links={links} />
       </div>
     </div>
   );

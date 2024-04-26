@@ -1,5 +1,5 @@
 export const paths = {
   about() {
-    return "/sobre";
+    return "#about";
   },
 };
