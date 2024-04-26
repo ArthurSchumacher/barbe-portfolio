@@ -12,27 +12,13 @@ interface NavbarMenuModalProps {
 
 function NavbarMenuModal({ links }: NavbarMenuModalProps) {
   const [open, setOpen] = useState(false);
-  const node = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const handleClickOutside = (e: MouseEvent) => {
-      if (node.current && !node.current.contains(e.target as Node)) {
-        setOpen(false);
-      }
-    };
-
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, []);
-
+  const handleClick = () => {
+    setOpen(!open);
+  };
   return (
     <>
       <Button
-        onClick={() => {
-          setOpen(!open);
-        }}
+        onClick={handleClick}
         size="icon"
         className="sm:hidden static flex items-center justify-center border-none bg-trasnparent"
       >
