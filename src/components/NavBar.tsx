@@ -7,9 +7,9 @@ import MobileNav from "./MobileNav";
 function NavBar() {
   const links = [
     { label: "About", path: paths.about() },
-    { label: "Professional Projects", path: paths.about() },
-    { label: "Personal Work", path: paths.about() },
-    { label: "Contact", path: paths.about() },
+    { label: "Professional Projects", path: paths.projects() },
+    { label: "Personal Work", path: paths.work() },
+    { label: "Contact", path: paths.contact() },
   ];
 
   const renderedLinks = links.map((link, index) => {
