@@ -33,9 +33,8 @@ function NavbarMenuModal({ links }: NavbarMenuModalProps) {
         onClick={() => {
           setOpen(!open);
         }}
-        variant="ghost"
         size="icon"
-        className="sm:hidden static flex items-center justify-center"
+        className="sm:hidden static flex items-center justify-center border-none bg-trasnparent"
       >
         {open ? <LiaTimesSolid size={28} /> : <GoListUnordered size={28} />}
       </Button>
