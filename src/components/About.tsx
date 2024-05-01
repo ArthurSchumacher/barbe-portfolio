@@ -5,6 +5,7 @@ import { ReactNode } from "react";
 interface AboutProps {
   imagePath: string;
   isReverse?: boolean;
+  rightTitle?: boolean;
   title?: string;
   link?: string;
   pathToLink?: string;
@@ -13,6 +14,7 @@ interface AboutProps {
 
 function About({
   isReverse,
+  rightTitle,
   imagePath,
   title,
   link,
@@ -35,7 +37,9 @@ function About({
         />
       </div>
       <div className="sm:col-span-1 col-span-2 flex flex-col items-center justify-center p-6">
-        {title && <h1 className="self-start text-3xl py-4">{title}</h1>}
+        {title && (
+          <h1 className={`sm:text-4xl text-2xl py-4 self-start`}>{title}</h1>
+        )}
         <p
           className={`sm:text-left text-justify ${
             isReverse ? "sm:text-right" : ""

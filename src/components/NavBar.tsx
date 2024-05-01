@@ -1,17 +1,10 @@
 "use client";
-import { paths } from "@/paths";
+import { links } from "@/paths";
 import Link from "next/link";
 
 import MobileNav from "./MobileNav";
 
 function NavBar() {
-  const links = [
-    { label: "About", path: paths.about() },
-    { label: "Professional Projects", path: paths.projects() },
-    { label: "Personal Work", path: paths.work() },
-    { label: "Contact", path: paths.contact() },
-  ];
-
   const renderedLinks = links.map((link, index) => {
     return (
       <li className="group relative" key={index}>

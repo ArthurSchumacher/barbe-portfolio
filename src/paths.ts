@@ -12,3 +12,10 @@ export const paths = {
     return "#contact";
   },
 };
+
+export const links = [
+  { label: "About", path: paths.about() },
+  { label: "Professional Projects", path: paths.projects() },
+  { label: "Personal Work", path: paths.work() },
+  { label: "Contact", path: paths.contact() },
+];
