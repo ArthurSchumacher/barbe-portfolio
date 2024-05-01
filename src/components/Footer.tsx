@@ -23,7 +23,7 @@ function Footer() {
           <FaInstagram size={30} className="text-neutral-50" />
         </div>
         <nav className="flex items-center justify-center py-4">
-          <ul className="flex items-center justify-center gap-x-8 text-neutral-50">
+          <ul className="flex sm:flex-row flex-col items-center justify-center sm:gap-x-8 text-neutral-50">
             {renderedLinks}
           </ul>
         </nav>
