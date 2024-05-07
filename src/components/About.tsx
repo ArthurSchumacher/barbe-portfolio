@@ -5,7 +5,6 @@ import { ReactNode } from "react";
 interface AboutProps {
   imagePath: string;
   isReverse?: boolean;
-  rightTitle?: boolean;
   title?: string;
   link?: string;
   pathToLink?: string;
@@ -14,7 +13,6 @@ interface AboutProps {
 
 function About({
   isReverse,
-  rightTitle,
   imagePath,
   title,
   link,
@@ -22,7 +20,7 @@ function About({
   children,
 }: AboutProps) {
   return (
-    <div className="grid grid-cols-2">
+    <section className="grid grid-cols-2">
       <div
         className={`sm:col-span-1 col-span-2 flex items-center justify-center p-6 ${
           isReverse ? "sm:order-1" : ""
@@ -53,7 +51,7 @@ function About({
           </Link>
         )}
       </div>
-    </div>
+    </section>
   );
 }
 
