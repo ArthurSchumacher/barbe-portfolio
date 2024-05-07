@@ -8,15 +8,15 @@ export default function Home() {
       <About title="Sobre Mim" imagePath="/foto1.png">
         Olá! Sou Gabriel, um estudante de Ciência da Computação na UFMS
         apaixonado por desenvolvimento de jogos. Desde jovem, mergulhei no mundo
-        dos jogos 2D e pixel art, encontrando neles minha verdadeira paixão. Com
-        alguns anos de experiência como programador, tenho me dedicado a
-        aprimorar minhas habilidades técnicas e criativas, transformando minhas
-        ideias em jogos e mecânicas divertidas.
+        dos jogos 2D e pixel art, encontrando neles minha verdadeira paixão.
       </About>
 
       <About imagePath="/foto1.png" link="Ver mais" pathToLink="/" isReverse>
-        Agora, convido você a explorar meu portfólio, onde compartilho um pouco
-        da minha jornada e de algumas aventuras que criei.
+        Com alguns anos de experiência como programador, tenho me dedicado a
+        aprimorar minhas habilidades técnicas e criativas, transformando minhas
+        ideias em jogos e mecânicas divertidas. Agora, convido você a explorar
+        meu portfólio, onde compartilho um pouco da minha jornada e de algumas
+        aventuras que criei.
       </About>
 
       <Portfolio />
