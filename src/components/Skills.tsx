@@ -19,9 +19,12 @@ function Skills() {
         <ul>
           <li className="text-xl">C#</li>
           <li className="text-xl">Unity</li>
-          <li className="text-xl">C#</li>
-          <li className="text-xl">Unity</li>
-          <li className="text-xl">C#</li>
+          <li className="text-xl">
+            Conhecimento sólido em Matemática e Física#
+          </li>
+          <li className="text-xl">Aseprite</li>
+          <li className="text-xl">Adaptabilidade#</li>
+          <li>Resolução de problemas</li>
         </ul>
       </div>
     </div>
